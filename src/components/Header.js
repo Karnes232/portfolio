@@ -1,52 +1,53 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import codingIcon from '../images/laptop-code-solid.svg'
+
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon">
+        <img src={codingIcon} alt="" />
+      </span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>James Karnes</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          I'm an independent Web developer originally from Manitoba, Canada, but now residing on the beaches of the Dominican Republic.
         </p>
       </div>
     </div>
     <nav>
       <ul>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
+      <li>
           <button
             onClick={() => {
               props.onOpenArticle('about')
             }}
           >
-            About
+            About Me
           </button>
         </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('skills')
+            }}
+          >
+            Skills
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('projects')
+            }}
+          >
+            Projects
+          </button>
+        </li>
+
         <li>
           <button
             onClick={() => {

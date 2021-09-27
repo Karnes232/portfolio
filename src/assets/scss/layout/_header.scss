@@ -47,10 +47,15 @@
       display: block;
       position: absolute;
       top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
+      left: calc(50%);
       width: _size(border-width);
       height: calc(3.5rem + 1px);
       background: _palette(border);
+    }
+    @include breakpoint(medium) {
+      &:before {
+        left: calc(50%);
+      }
     }
   }
 
@@ -68,8 +73,24 @@
     line-height: 5.5rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 2.5rem;
+        opacity: .4;
+        transition: all .5s ease;
+        &:hover {
+          opacity: .7;
+        }
+      }
+
       &:before {
         font-size: 2rem;
       }
@@ -96,10 +117,15 @@
       padding: 3rem 2rem;
       max-height: 40rem;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       > :last-child {
         margin-bottom: 0;
       }
+      
     }
 
     p {
@@ -107,6 +133,7 @@
       letter-spacing: _font(letter-spacing);
       font-size: 0.8rem;
       line-height: 2;
+      max-width: 60%;
     }
   }
 
@@ -200,6 +227,7 @@
   @include breakpoint(medium) {
     .content {
       p {
+        max-width: 80%; 
         br {
           display: none;
         }
@@ -247,20 +275,34 @@
       .inner {
         padding: 2.5rem 0;
       }
+      p {
+        max-width: 90%;
+      }
     }
 
     nav {
+      display: flex;
+      justify-content: center;
+      
       ul {
-        @include vendor('flex-direction', 'column');
+        flex-wrap: wrap;
         min-width: 10rem;
-        max-width: 100%;
+        max-width: 70%;
 
         li {
-          border-left: 0;
-          border-top: solid _size(border-width) _palette(border);
+          flex: 50%;
+          border-left: solid _size(border-width) _palette(border);
+          border-top: 0;
 
           &:first-child {
             border-top: 0;
+          }
+          &:nth-child(3) {
+            border-left: 0;
+            border-top: solid _size(border-width) _palette(border);
+          }
+          &:last-child {
+            border-top: solid _size(border-width) _palette(border);
           }
 
           a {

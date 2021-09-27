@@ -1,0 +1,94 @@
+.projectContainer{
+    background-color: transparentize(_palette(bg-alt), 0.65);
+    display: flex;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    min-height: 14rem;
+    margin-bottom: 1rem;
+    @include breakpoint(small) {
+        flex-direction: column;
+    }
+
+    .projectImageContainer {
+        width: 15vw;
+        @include breakpoint(large) {
+            width: 18vw;
+        }
+        @include breakpoint(medium) {
+            width: 20vw;
+        }
+        @include breakpoint(small) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        img {
+            object-fit: cover;
+            width: 15vw;
+            border-radius: 1rem;
+            @include breakpoint(large) {
+                width: 18vw;
+            }
+            @include breakpoint(medium) {
+                width: 20vw;
+            }
+            @include breakpoint(small) {
+                width: 40vw;
+            }
+        }
+    }
+
+    .projectDescribeContainer {
+        margin-left: 1rem;
+
+        h3 {
+            font-size: .8rem;
+            margin-bottom: .2rem;
+            @include breakpoint(small) {
+                font-size: 1rem;
+            }
+        }
+        h4 {
+            font-size: .6rem;
+            margin-bottom: 0;
+        }
+
+        .techStack {
+            color: transparentize(_palette(fg-light), 0.1);
+        }
+
+        ul {
+            font-size: .7rem;
+            margin-bottom: .5rem;
+            @include breakpoint(small) {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .projectLinks {
+        display: flex;
+        justify-content: space-between;
+        width: 5vw;
+        font-size: .8rem;
+
+        @include breakpoint(large) {
+            width: 7vw;
+        }
+
+        @include breakpoint(medium) {
+            width: 8vw;
+        }
+
+        @include breakpoint(small) {
+            width: 12vw;
+        }
+        @include breakpoint(xsmall) {
+            width: 15vw;
+        }
+        @include breakpoint(xxsmall) {
+            width: 18vw;
+        }
+    }
+}
