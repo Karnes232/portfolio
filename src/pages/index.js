@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location}>
       <Helment>
         <meta name="description" content="Front-end Web Developer" />
-        <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+        <meta property="og:image" content="https://karnes.netlify.app/static/guy-f05990f3f2b8313c5e8f3b43978d8b5f.webp" />
       </Helment>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
