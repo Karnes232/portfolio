@@ -33,7 +33,7 @@ const Contact = () => {
           <ul className="icons">
           <li>
               <a
-                href="hhttps://github.com/Karnes232"
+                href="https://github.com/Karnes232"
                 className="icon"
                 target="_blank"
                 rel="noreferrer"

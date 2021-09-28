@@ -13,7 +13,7 @@ const About = () => {
           </div>
           
           <p>
-            I'm a self-taught front-end web developer with a background in tourism. In 2020 I found myself with a lot of spare time and decided to take advantage of the situation by learning a new skill. I decided to enroll in a few techinical courses on different platforms such has coursera and edx. Recently, I have completed <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" rel="noreferrer">"The Web Developer Bootcamp"</a> and <a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/" target="_blank" rel="noreferrer">"Complete React Developer"</a> on the <a href="https://www.udemy.com" target="_blank" rel="noreferrer">Udemy</a> platform. I am passionate about coding, solving problems and learning more.
+            I'm a self-taught front-end web developer with a background in tourism. In 2020 I found myself with a lot of spare time and decided to take advantage of the situation by learning a new skill. I decided to enroll in a few techinical courses on different platforms such as coursera and edx. Recently, I have completed <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" rel="noreferrer">"The Web Developer Bootcamp"</a> and <a href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/" target="_blank" rel="noreferrer">"Complete React Developer"</a> on the <a href="https://www.udemy.com" target="_blank" rel="noreferrer">Udemy</a> platform. I am passionate about coding, solving problems and learning more.
 
           </p>
         </div>
