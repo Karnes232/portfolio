@@ -59,10 +59,10 @@
         }
 
         ul {
-            font-size: .7rem;
+            font-size: .9rem;
             margin-bottom: .5rem;
             @include breakpoint(small) {
-                font-size: .8rem;
+                font-size: .9rem;
             }
         }
     }
