@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: 'Real-Estate App',
+        technologiesUsed: ['ReactJs', 'NodeJS', 'JWT', 'Mapbox'],
+        description: ['Real-Estate App connecting a React Front-end to a NodeJS back-end', 'Use of npm package Mapbox and googlemaps api', 'Backend storing photos with Cloudinary'],
+        liveUrl: 'https://real-estate-karnes.netlify.app/',
+        githubUrl: 'https://github.com/Karnes232/real-estate-front-end',
+        imageUrl: 'https://i.ibb.co/Kh0BG0Q/real-estate.webp'
+    },
+    {
         title: 'Silverbank Whales',
         technologiesUsed: ['GatsbyJS', 'Sass'],
         description: ['Gatsby Static site build for a whale watching tour company', 'Use of npm package pro-gallery display of photos in random order', 'Build using Sass with background videos and transitions'],
